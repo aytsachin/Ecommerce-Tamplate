@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.72.0" />
+  <title>Ecommernce company</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/masonry/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap core CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180" />
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json" />
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3" />
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico" />
+
+  <meta name="theme-color" content="#7952b3" />
+
+  <link rel="stylesheet" href=".css/styles.css" />
+</head>
+<!-- copy https://the7.io/elementor-shop/ -->
+
+<body>
+  <header>
+    <nav class="navbar m-0 p-0">
+      <div class="d-flex">
+        <!-- <a class="navbar-brand  text-dark" href="#"><i class="fa-solid fa-headset text-success"></i> Helpline <span class="text-success">+91 8319697083</span></a> -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="navbar mx-5 p-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex row flex-row flex-nowrap font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#"><i
+                  class="fa-solid fa-user text-success mx-1"></i>User/Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-location-dot text-success"></i>Order
+                Tracking
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-question text-success"></i>FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="navbar-brand text-dark " href="#"><i class="fa-solid fa-headset text-success"></i> Helpline
+        <span class="text-success">+91 8319697083</span></a>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-white" onscroll="stopOnHeader" id="stopOnHeading">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark font-weight-bold fs-1" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark font-weight-bold" href="javascript:void(0)">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark font-weight-bold" href="javascript:void(0)">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark font-weight-bold" href="javascript:void(0)">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark font-weight-bold" href="javascript:void(0)">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark font-weight-bold" href="javascript:void(0)">More</a>
+            </li>
+          </ul>
+          <form class="d-flex border-dark w-50 rounded-pill" style="border: 1px solid gray">
+            <input class="form-control p-0 mx-3 w-100 border-0" type="text" placeholder="Search" />
+            <button class="btn" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <a class="mx-3 d-flex flex-column align-items-center text-decoration-none" href="#"><i
+              class="fa-solid fa-cart-shopping fa-2x">
+              <span class="text-white bg-success" style="
+                    padding: 4px;
+                    position: absolute;
+                    font-size: 8px;
+                    right: 8em;
+                    z-index: 99999;
+                    border-radius: 3em;
+                  ">1</span></i><span class="text-dark text-decoration-none">$0.00</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container-xxl">
+    <div class="row">
+      <div class="col-8">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active sliderImageDiv">
+              <img class="d-block h-100 w-100" src="./img/side image4.webp" alt="First slide" />
+              <span class="slider_discription">
+                <h1>meet our new minimalistic furniture collection</h1>
+                <p>top quality , premium material , timeless silhouettes</p>
+                <button class="bg-success text-white">
+                  shop new collection
+                </button>
+              </span>
+            </div>
+            <div class="carousel-item sliderImageDiv">
+              <img class="d-block w-100" src="./img/side image3.webp" alt="Second slide" />
+              <span class="slider_discription">
+                <h1>meet our new minimalistic furniture collection</h1>
+                <p>top quality , premium material , timeless silhouettes</p>
+                <button class="bg-success text-white">
+                  shop new collection
+                </button>
+              </span>
+            </div>
+            <div class="carousel-item sliderImageDiv">
+              <img class="d-block w-100" src="./img/side image.webp" alt="Third slide" />
+              <span class="slider_discription">
+                <h1>meet our new minimalistic furniture collection</h1>
+                <p>top quality , premium material , timeless silhouettes</p>
+                <button class="bg-success text-white">
+                  shop new collection
+                </button>
+              </span>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-4 grid" style="display: grid">
+        <div class="h-25 g-col-6">
+          <img src="./img/side image.webp" height="300em" alt="" />
+        </div>
+        <div class="col-6 mt-1">
+          <img src="./img/side image2.webp" width="450em" height="275em" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="bg-transparent" />
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <i class="fa-brands mx-3 fa-amazon-pay font-weight-bold"></i> Secure
+        Panyment
+      </div>
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <i class="fa-solid mx-3 fa-right-left font-weight-bold"></i> 30 Days
+        return policy
+      </div>
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <i class="fa-solid mx-3 fa-headphones font-weight-bold"></i>24x7 Help
+        Support
+      </div>
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <i class="fa-solid mx-3 fa-truck-fast font-weight-bold"></i>Flexiable
+        shipping
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <!-- 
+<section class="container-xxl">
+  <h1>What's new</h1>
+  <div class="whatsnew row">
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+    <div class="col">
+      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
+      <span class="slider_discription" >
+        <h3>Rotating lounge chair</h3>
+        <p>50$</p>
+        <button class="bg-success text-white">shop new collection</button>
+      </span>
+    </div>
+  </div>
+</section> -->
+
+  <section class="container-xxl">
+    <h3 class="font-weight-bold h3 text-center">What's new</h3>
+    <div class="row justify-content-around">
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" style="height: 10em"
+          src="https://the7.io/elementor-shop/wp-content/uploads/sites/79/2022/08/2023-001-600x800.jpg"
+          alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">44$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" style="height: 10em"
+          src="https://the7.io/elementor-shop/wp-content/uploads/sites/79/2021/01/q086.jpg" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">44$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" style="height: 10em"
+          src="https://the7.io/elementor-shop/wp-content/uploads/sites/79/2022/08/q062.jpg" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">44$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" style="height: 10em"
+          src="https://the7.io/elementor-shop/wp-content/uploads/sites/79/2021/01/q010995.jpg" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">44$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <section class="container-xxl">
+    <h3 class="font-weight-bold h3 text-center">Categories</h3>
+    <div class="row justify-content-around carousel slide" id="carouselExampleCategories" data-ride="carousel">
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">4 Items avilable</p>
+          <a href="#" class="btn btn-secondary">Visit now</a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">2 items avilable</p>
+          <a href="#" class="btn btn-secondary">Visit now</a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">44 Items avilable</p>
+          <a href="#" class="btn btn-secondary">Visit now</a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating Chair</h5>
+          <p class="card-text">54 Items avilable</p>
+          <a href="#" class="btn btn-secondary">Visit now</a>
+        </div>
+      </div>
+    </div>
+
+    <!--   
+  <a class="carousel-control-prev" href="#carouselExampleCategories" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCategories" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+  </section>
+
+  <hr />
+  <section class="container-xxl">
+    <h3 class="font-weight-bold h3 text-center">Bestsellers</h3>
+    <div class="row justify-content-around carousel slide" id="carouselExampleCategories" data-ride="carousel">
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Soft lounge chair</h5>
+          <p class="card-text">44$ - 55$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Rotating lounge chair</h5>
+          <p class="card-text">44$ - 65$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Framed table lamp</h5>
+          <p class="card-text">44$ - 80$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+
+      <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
+        <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
+        <div class="card-img-top image_cards"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Minimalistic shelves</h5>
+          <p class="card-text">44$ - 90$</p>
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
+              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a class="carousel-control-prev" href="#carouselExampleCategories" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCategories" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+  </section>
+
+  <div class="bg-white">
+    <footer class="pt-3 container">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <!-- <label for="newsletter1" class="visually-hidden">Email address</label> -->
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+         <div class="my-3">
+          <a class="navbar-brand text-dark my-5" href="#"><i class="fa-solid fa-headset text-success"></i> Helpline
+            <span class="text-success">+91 8319697083</span></a>
+         </div>
+        </div>
+      </div>
+      <div class="d-flex text-center justify-content-around">
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ 
+<script src=".js/main.js"></script>
+
+
+
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+  background-color: rgba(193, 193, 193, 0.7568627451);
+}
+
+.sliderImageDiv {
+  cursor: crosshair;
+}
+.sliderImageDiv img {
+  height: 100%;
+  width: 100%;
+}
+.sliderImageDiv .slider_discription {
+  padding: 7em;
+  top: 3em;
+  position: absolute;
+}
+.sliderImageDiv .slider_discription h1 {
+  color: #fff;
+}
+.sliderImageDiv .slider_discription p {
+  color: #fff;
+}
+.sliderImageDiv .slider_discription button {
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.sliderImageDiv .container-xxl h1 {
+  text-align: center;
+}
+
+.whatsnew {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
+
+.fa-star,.fa-star-half-stroke{
+  /* color: gold; */
+}

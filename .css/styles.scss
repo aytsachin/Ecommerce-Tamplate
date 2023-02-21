@@ -1,0 +1,47 @@
+$main-color : #212f56;
+$text-color:#fff;
+body{
+    background-color: #c1c1c1c1;
+}
+p{
+    // background-color: $main-color;
+}
+.sliderImageDiv{
+    cursor: crosshair;
+img{
+    height: 100%;
+    width: 100%;
+}
+.slider_discription{
+    padding: 7em;
+    top: 3em;
+    position: absolute;
+    h1{
+        color: $text-color;
+    }
+    p{
+        color: $text-color;
+    }
+    button{
+        padding: .5em;
+        border-radius: 1em;
+    }
+    
+}
+.container-xxl{
+    h1{
+        text-align: center;
+    }
+}
+}
+.whatsnew {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    .image_cards{
+        background-image: url(../img/side\ image.webp);
+    }
+}
