@@ -49,33 +49,38 @@
           <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="navbar mx-5 p-0">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex row flex-row flex-nowrap font-weight-bold">
+          <button id="userRegisterbtn" class="btn btn-sm text-success"><i class="fa-solid menubarBtnUser fa-user"></i></button> 
+          <button id="usercrossbtn" class="btn btn-sm text-success CrossMark"><i class="fa-solid fa-xmark"></i></button> 
+          <ul id="userRegisterbtnChild" class="navbar-nav me-auto mb-2 mb-lg-0 d-flex row flex-row flex-nowrap font-weight-bold">
             <li class="nav-item">
               <a class="nav-link active text-dark" aria-current="page" href="#"><i
                   class="fa-solid fa-user text-success mx-1"></i>User/Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-location-dot text-success"></i>Order
+              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-location-dot text-success"></i> Order
                 Tracking
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-question text-success"></i>FAQ</a>
+              <a class="nav-link text-dark" href="#"><i class="fa-solid fa-question text-success"></i> FAQ</a>
             </li>
           </ul>
         </div>
       </div>
-      <a class="navbar-brand text-dark " href="#"><i class="fa-solid fa-headset text-success"></i> Helpline
+      <a class="navbar-brand text-dark helplinebtn" href="#"><i class="fa-solid fa-headset text-success"></i> Helpline
         <span class="text-success">+91 8319697083</span></a>
+        
     </nav>
 
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-white" onscroll="stopOnHeader" id="stopOnHeading">
       <div class="container-fluid">
         <a class="navbar-brand text-dark font-weight-bold fs-1" href="javascript:void(0)">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
+        <div class="appendinheter"> </div>
+        <button class="navbar-toggler-btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <!-- <span class="navbar-toggler-icon "></span> -->
+          <i class="fa-solid menubarBtnUser text-dark font-weight-bold border-0 fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse justify-content-around" id="mynavbar">
           <ul class="navbar-nav me-auto">
@@ -101,7 +106,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-          <a class="mx-3 d-flex flex-column align-items-center text-decoration-none" href="#"><i
+          <a  class="mx-3 d-flex flex-column align-items-center text-decoration-none myshopingcarts" href="#"><i
               class="fa-solid fa-cart-shopping fa-2x">
               <span class="text-white bg-success" style="
                     padding: 4px;
@@ -118,8 +123,8 @@
 
   <section class="container-xxl">
     <div class="row">
-      <div class="col-8">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="col-md-8"> 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
           <div class="carousel-inner">
             <div class="carousel-item active sliderImageDiv">
               <img class="d-block h-100 w-100" src="./img/side image4.webp" alt="First slide" />
@@ -162,12 +167,12 @@
           </a>
         </div>
       </div>
-      <div class="col-4 grid" style="display: grid">
-        <div class="h-25 g-col-6">
-          <img src="./img/side image.webp" height="300em" alt="" />
+      <div class="col-md-4 d-md-grid d-flex" style="display: grid">
+        <div class="h-25 col-6">
+          <img class="menuSideImage" src="./img/side image.webp" alt="" />
         </div>
-        <div class="col-6 mt-1">
-          <img src="./img/side image2.webp" width="450em" height="275em" alt="" />
+        <div class="col-6 mt-md-1">
+          <img class="menuSideImage menuSideImage2" src="./img/side image.webp" alt="" />
         </div>
       </div>
     </div>
@@ -175,80 +180,25 @@
   <hr class="bg-transparent" />
   <section class="container-fluid">
     <div class="row">
-      <div class="col-3 d-flex justify-content-center align-items-center">
+      <div class="col-md-3 my-3 d-flex justify-content-center align-items-center">
         <i class="fa-brands mx-3 fa-amazon-pay font-weight-bold"></i> Secure
-        Panyment
+        Payment
       </div>
-      <div class="col-3 d-flex justify-content-center align-items-center">
+      <div class="col-md-3 my-3 d-flex justify-content-center align-items-center">
         <i class="fa-solid mx-3 fa-right-left font-weight-bold"></i> 30 Days
         return policy
       </div>
-      <div class="col-3 d-flex justify-content-center align-items-center">
+      <div class="col-md-3 my-3 d-flex justify-content-center align-items-center">
         <i class="fa-solid mx-3 fa-headphones font-weight-bold"></i>24x7 Help
         Support
       </div>
-      <div class="col-3 d-flex justify-content-center align-items-center">
-        <i class="fa-solid mx-3 fa-truck-fast font-weight-bold"></i>Flexiable
+      <div class="col-md-3 my-3 d-flex justify-content-center align-items-center">
+        <i class="fa-solid mx-3 fa-truck-fast font-weight-bold"></i>Flexible 
         shipping
       </div>
     </div>
   </section>
   <hr />
-
-  <!-- 
-<section class="container-xxl">
-  <h1>What's new</h1>
-  <div class="whatsnew row">
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-    <div class="col">
-      <img class="d-block w-50" src="./img/side image4.webp" alt="Third slide">
-      <span class="slider_discription" >
-        <h3>Rotating lounge chair</h3>
-        <p>50$</p>
-        <button class="bg-success text-white">shop new collection</button>
-      </span>
-    </div>
-  </div>
-</section> -->
 
   <section class="container-xxl">
     <h3 class="font-weight-bold h3 text-center">What's new</h3>
@@ -261,10 +211,12 @@
         <div class="card-body text-center">
           <h5 class="card-title">Rotating Chair</h5>
           <p class="card-text">44$</p>
+          <span class="row text-danger p-2 my-auto w-50 d-flex h-25 p-2 align-content-center mx-auto border rounded-pill"><p class="col-3  h1 my-0 px-0 hover-overlay cartminusone" >-</p><input  class="col-6  text-dark font-weight-bold border-0 cartvalue" type="t" value="0" min="00" max="09"><p  class="col-3 text-success h1 my-0 px-1 hover-overlay cartplusone" >+</p></span>
+       
           <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
               class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
               class="fa-regular rating fa-star"></i></a>
-        </div>
+               </div>
       </div>
 
       <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
@@ -273,7 +225,9 @@
         <div class="card-img-top image_cards"></div>
         <div class="card-body text-center">
           <h5 class="card-title">Rotating Chair</h5>
-          <p class="card-text">44$</p>
+           <p class="card-text">44$</p>
+          <span class="row text-danger p-2 my-auto w-50 d-flex h-25 p-2 align-content-center mx-auto border rounded-pill"><p class="col-3  h1 my-0 px-0 hover-overlay cartminusone" >-</p><input  class="col-6  text-dark font-weight-bold border-0 cartvalue" type="t" value="0" min="00" max="09"><p  class="col-3 text-success h1 my-0 px-1 hover-overlay cartplusone" >+</p></span>
+       
           <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
               class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
               class="fa-regular rating fa-star"></i></a>
@@ -286,7 +240,9 @@
         <div class="card-img-top image_cards"></div>
         <div class="card-body text-center">
           <h5 class="card-title">Rotating Chair</h5>
-          <p class="card-text">44$</p>
+           <p class="card-text">44$</p>
+          <span class="row text-danger p-2 my-auto w-50 d-flex h-25 p-2 align-content-center mx-auto border rounded-pill"><p class="col-3  h1 my-0 px-0 hover-overlay cartminusone" >-</p><input  class="col-6  text-dark font-weight-bold border-0 cartvalue" type="t" value="0" min="00" max="09"><p  class="col-3 text-success h1 my-0 px-1 hover-overlay cartplusone" >+</p></span>
+       
           <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
               class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
               class="fa-regular rating fa-star"></i></a>
@@ -299,7 +255,9 @@
         <div class="card-img-top image_cards"></div>
         <div class="card-body text-center">
           <h5 class="card-title">Rotating Chair</h5>
-          <p class="card-text">44$</p>
+           <p class="card-text">44$</p>
+          <span class="row text-danger p-2 my-auto w-50 d-flex h-25 p-2 align-content-center mx-auto border rounded-pill"><p class="col-3  h1 my-0 px-0 hover-overlay cartminusone" >-</p><input  class="col-6  text-dark font-weight-bold border-0 cartvalue" type="t" value="0" min="00" max="09"><p  class="col-3 text-success h1 my-0 px-1 hover-overlay cartplusone" >+</p></span>
+       
           <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
               class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
               class="fa-regular rating fa-star"></i></a>
@@ -406,16 +364,16 @@
 
       <div class="card bg-image hover-zoom mx-1 my-1" style="width: 18rem">
         <img class="card-img-top" src="./img/side image3.webp" alt="Card image cap" />
-        <div class="card-img-top image_cards"></div>
-        <div class="card-body text-center">
-          <h5 class="card-title">Minimalistic shelves</h5>
-          <p class="card-text">44$ - 90$</p>
-          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i><i
-              class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
-              class="fa-regular rating fa-star"></i></a>
-        </div>
-      </div>
-    </div>
+        <div class="card-img-top image_cards"></div> 
+        <div class="card-body text-center"> 
+          <h5 class="card-title">Minimalistic shelves</h5> 
+          <p class="card-text">44$ - 90$</p> 
+          <a href="#" class="btn"><i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star"></i>
+            <i class="fa-solid rating fa-star"></i><i class="fa-solid rating fa-star-half-stroke"></i><i
+              class="fa-regular rating fa-star"></i></a> 
+        </div> 
+      </div> 
+    </div> 
 
     <!-- <a class="carousel-control-prev" href="#carouselExampleCategories" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
