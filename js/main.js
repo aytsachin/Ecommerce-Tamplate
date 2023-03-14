@@ -35,7 +35,7 @@ $(document).ready(()=>{
             $(".rating").removeAttr("style");
         }
     })
-});
+}); 
 
 // ================== User/Register for responsive =========
 $(document).ready(function(){
@@ -75,21 +75,63 @@ $(document).ready(function(){
 })
 
 
-$(document).ready(function(){
-  let curr = 0
-  $(".cartminusone").click(function(){
-    $(".cartvalue").val( curr <= 0 ? 0 : curr = curr - 1 )
-  })
 
-  $(".cartplusone").click(function(){
-    $(".cartvalue").val(curr = curr + 1)
-  })
-})
+
+// ( $( this ).text() )
+
+// $(document).ready(function(){
+// //   let existing = [ "q9anz4", "avd83n", "i2r37d", "jk3eum"]
+// // let newId = randomId();
+// // existing.find(function(id) {
+// //   return id === newId;
+// // });
+//   let curr = 0
+//   $(".itomscount").children(".cartminusone").click(function(){
+//     // $(".cartminusone").randomId("Id")= $(".cartvalue");
+//     $(".itomscount").children("button").val( curr <= 0 ? 0 : curr = curr - 1 )
+//   })
+
+//   $(".itomscount").children(".cartplusone").click(function(){
+//     $(".itomscount").children(".cartvalue").val(curr = curr + 1)
+//   })
+// })
+
+
+$(document).ready(function() {
+  $('.cartplusone').click(function() {
+    var input = $(this).siblings('.cartvalue');
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+      input.val(currentVal + 1);
+      var itemsPrice = parseFloat($(this).closest('tr').find('.itemsprice').text());
+      var subtotal = (currentVal+1) * itemsPrice;
+      $(this).closest('tr').find('.subtotal').text(subtotal); 
+    }
+  });
+
+  $('.cartminusone').click(function() {
+    var input = $(this).siblings('.cartvalue');
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal) && currentVal > 0) {
+      input.val(currentVal-1);
+      var itemsPrice = parseFloat($(this).closest('tr').find('.itemsprice').text());
+      var subtotal = currentVal * itemsPrice - itemsPrice;
+      $(this).closest('tr').find('.subtotal').text( subtotal); 
+    }
+  });
+});
+
+
+
+
+
+
+
 
 $(".cartvalue").keyup(function(){
   if (/\D/g.test(this.value))
   {
-    // Filter non-digits from input value.
+   
     this.value = this.value.replace(/\D/g, '');
   }
 })
@@ -124,6 +166,25 @@ $(".cartvalue").keyup(function(){
 //     cartValues[index] = parseInt($(this).val());
 //   })
 // })
+
+
+
+// =================advance css
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+  
+// }
+// $(".card-img-top").hover(
+// function(){
+//   $(".card-img-top").toggle("src", "https://the7.io/elementor-shop/wp-content/uploads/sites/79/2022/08/2023-001-600x800.jpg");
+// }
+// );
+
+$(function(){
+  $("#header").load("header.html"); 
+});
+// $("#header").append("header.html#appendheader"); 
+
 
 
 
@@ -174,8 +235,31 @@ $(".cartvalue").keyup(function(){
     "cursor": "pointer"
 })
  
+// $("#header").append($("#appendheader"));
   }
   else{
 
   }
   
+
+
+  function includeHTML(header) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("header").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", header.html, true);
+    xhttp.send();
+  }
+  
+
+  (function($){
+    $.fn.disableSelection = function() {
+        return this
+        .attr('unselectable', 'on')
+        .css('user-select', 'none')
+        .on('selectstart dragstart', false);
+    };
+})(jQuery);
